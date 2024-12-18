@@ -10,16 +10,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  /* background: rgb(158, 176, 235); */
+   background-color: #f4f4f4;
 }
-/** Sub_header content **/
-/** Sub-header content **/
+
 .sub-header {
   background-color: #1f272b;
   width: 100%;
   height: 60px;
-  /* display: flex;
-  align-items: center;  */
 }
 
 .sub-header .container {
@@ -32,7 +29,7 @@ body {
 }
 
 .left-content p {
-  color: #fff;
+   color:#c6c1c1;
   font-size: 13px;
 }
 
@@ -55,7 +52,7 @@ body {
 .sub-header .right-icons a:hover {
   color: #467fbc;
 }
-/** Navbar content **/
+
 nav {
   padding: 5px 5%;
   display: flex;
@@ -185,7 +182,6 @@ nav ul li a:hover {
     display: none;
   }
 }
-/* section 1 */
 #bg-video {
     min-width: 100%;
     min-height: 100vh;
@@ -234,7 +230,7 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
-  background: #fff;
+  background:  #f4f4f4;
   width: 5rem;
   aspect-ratio: 1;
   border-radius: 0 0 35% 0;
@@ -255,7 +251,7 @@ ul li {
   position: absolute;
   width: 1rem;
   aspect-ratio: 1;
-  background: #fff;
+  background:  #f4f4f4;
 }
 
 .index__curve::after {
@@ -354,9 +350,26 @@ ul li {
 }
 
 .text-shadow {
-text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04);
 }
 .footer {
+  text-align: center;
+  border-top: 1px solid rgba(250,250,250,0.15);
+   padding: 5px 0px;
+  background-color: #000;
+  color:#c6c1c1;
+ 
+}
+.footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+   color:#c6c1c1
+}
+
+.footer p a {
+  color: #f5a425;
+}
+.contact {
   text-align: center;
   margin-top: 140px;
   border-top: 1px solid rgba(250,250,250,0.15);
@@ -364,20 +377,114 @@ text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px r
   background-color: #000;
    color: #fff;
 }
-.footer p {
+.contact p {
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
 }
 
-.footer p a {
+.contact p a {
   color: #f5a425;
 }
-
-.m1    {
-   padding: 60px; 
+.m1   ,
+.m2 ,
+.description,
+.competences,
+.admission{  
+  padding-left: 60px;
+  padding-right: 60px; }
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
-.m2 { padding: 60px; }
-.description{ padding: 60px; }
-.competences{ padding: 60px; }
-.admission{ padding: 60px; }
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-logo img {
+    margin-bottom: 10px;
+}
+
+.sub-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6C6C6C;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.contact-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.contact-right h4 {
+    margin-bottom: 15px;
+    text-align: left;
+     color:#c6c1c1
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+     color:#6C6C6C;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 18px;
+   
+}
+
+.contact-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+.center-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin: 0;
+}
+.card {
+   padding: 6rem 2rem 2rem;
+  background: rgb(131, 143, 164);
+  width: min(90%, 500px);
+  min-height: 200px;
+  border-radius: 1rem;
+  color: white;
+}
+.back-to-top {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #f5a425;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #c68519;
+}
+
+.back-to-top:focus {
+  outline: none;
+}
